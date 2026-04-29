@@ -4,7 +4,6 @@ public class Estudiante {
     private double promedio;
     private double valorMatricula;
 
-    
     public Estudiante(String codigo, String nombre, double promedio, double valorMatricula) {
         this.codigo = codigo;
         this.nombre = nombre;
