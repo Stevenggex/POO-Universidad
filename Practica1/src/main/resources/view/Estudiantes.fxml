@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Practica1.fxcontroller.EstudiantesFxController">
+   <children>
+      <Label layoutX="245.0" layoutY="14.0" text="Registro Estudiantes " />
+      <VBox layoutX="28.0" layoutY="44.0" prefHeight="65.0" prefWidth="186.0">
+         <children>
+            <Label text="Nombre: " />
+            <TextField fx:id="txtNombre" />
+         </children>
+      </VBox>
+      <VBox layoutX="28.0" layoutY="117.0" prefHeight="53.0" prefWidth="186.0">
+         <children>
+            <Label text="Apellido: " />
+            <TextField fx:id="txtApellido" />
+         </children>
+      </VBox>
+      <VBox layoutX="28.0" layoutY="189.0" prefHeight="53.0" prefWidth="186.0">
+         <children>
+            <Label text="Carrera: " />
+            <TextField fx:id="txtCarrera" prefHeight="25.0" prefWidth="181.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="28.0" layoutY="250.0" prefHeight="53.0" prefWidth="186.0">
+         <children>
+            <Label text="Edad: " />
+            <TextField fx:id="txtEdad" prefHeight="25.0" prefWidth="183.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnRegistrar" layoutX="28.0" layoutY="324.0" mnemonicParsing="false" text="Registrar" />
+      <Button fx:id="btnSalir" layoutX="152.0" layoutY="324.0" mnemonicParsing="false" text="Salir" />
+      <TableView fx:id="tblEstudiantes" layoutX="237.0" layoutY="50.0" prefHeight="312.0" prefWidth="359.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="90.0" text="Nombre " />
+          <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
+            <TableColumn fx:id="colCarrera" prefWidth="75.0" text="Carrera" />
+            <TableColumn fx:id="colEdad" prefWidth="75.0" text="Edad" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
